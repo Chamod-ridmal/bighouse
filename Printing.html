@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="common.css" rel="stylesheet">
+    <link href="navi.css">
+    <link href="Architecture.css" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+         :root {
+            --primary: #2c3e50;
+            --secondary: #c6d7e7;
+            --accent: #e67e22;
+            --dark: #1a252f;
+            --text-dark: #2c3e50;
+            --text-light: #95a5a6;
+            --dark-brown: #2c3e50;
+        }
+
+        /* Responsive Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                        url('https://images.unsplash.com/photo-1562564055-71e051d33c19') center/cover;
+            margin-top: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+        }
+
+        /* Responsive Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive Why Choose Us Section */
+        .why-choose-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            height: 100%;
+        }
+
+        .why-choose-card.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Typography */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .service-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .service-card p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                height: 50vh;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-choose-card {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Responsive Navigation */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                padding: 1rem 0;
+            }
+            
+            .nav-item {
+                margin: 0.5rem 0;
+            }
+        }
+
+        /* Responsive Footer */
+        @media (max-width: 768px) {
+            footer {
+                text-align: center;
+            }
+
+            .footer-logo {
+                margin-bottom: 2rem;
+            }
+
+            .col-md-3 {
+                margin-bottom: 2rem;
+            }
+        }
+
+        /* General Responsive Padding */
+        .py-5 {
+            padding-top: 3rem !important;
+            padding-bottom: 3rem !important;
+        }
+
+        @media (max-width: 576px) {
+            .py-5 {
+                padding-top: 2rem !important;
+                padding-bottom: 2rem !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="img/WhatsApp Image 2024-12-25 at c10.14.00_aba0c33f.jpg" alt="Big House Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Premium Printing Services</h1>
+            <p>Elevating your ideas through quality printing solutions</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container py-5">
+            <h2 class="section-title text-center mb-5">Our Printing Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>ID Card Printing</h3>
+                    <p>Professional ID cards for employees, students, and events, designed for durability and style.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Plan Copying & Blueprinting</h3>
+                    <p>High-resolution large-format prints, blueprints, and document scanning for architects and engineers.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-photo-video"></i>
+                    <h3>Flex Printing</h3>
+                    <p>Vibrant banners, signage, and custom outdoor and indoor designs for maximum impact.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Unique, brand-consistent layouts for brochures, flyers, and other marketing materials.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-print"></i>
+                    <h3>Digital Offset Printing</h3>
+                    <p>High-quality, fast-turnaround printing with options for customization and personalization.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>T-Shirt & Cloth Printing</h3>
+                    <p>Custom apparel solutions, including screen printing, DTG printing, and embroidery.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-coffee"></i>
+                    <h3>Mug Printing</h3>
+                    <p>Full-color, personalized mugs ideal for gifts, branding, or promotional use.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h3>Invitation & Wedding Cards</h3>
+                    <p>Elegant and custom-designed invitations for weddings, events, and special occasions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us bg-light py-5" id="why-choose">
+        <div class="container">
+            <h2 class="text-center mb-5">Why Choose Big House</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="why-choose-card">
+                        <h3><i class="fas fa-star-half-alt me-2"></i>Top Quality</h3>
+                        <p>Cutting-edge technology and premium materials ensure exceptional results.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why-choose-card">
+                        <h3><i class="fas fa-tools me-2"></i>Tailored Solutions</h3>
+                        <p>Personalized services to match your unique style and requirements.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="why-choose-card">
+                        <h3><i class="fas fa-users me-2"></i>Expert Team</h3>
+                        <p>Skilled professionals dedicated to delivering precision and creativity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!--social side fix bar-->
+     <div class="social-sidebar">
+        <div class="social-side-fix">
+            <a href="#" class="side-fix-facebook">Facebook</a>
+            <a href="#" class="side-fix-youtube">YouTube</a>
+            <a href="#" class="side-fix-tiktok">TikTok</a>
+            <div class="rotate-text">Follow us.</div>
+        </div>
+    </div>
+
+    <!--whatsapp  slide bottom  -->
+    <div class="whatsapp-slide">
+        <a href="#"><img src="img/icon/whatsappl.png" width="50px" height="50px" ></a>
+    </div> 
+      <!-- Footer -->
+      <footer style="background-color: #17252A" class="text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <img src="img/WhatsApp Image 2024-12-25 at c10.14.00_aba0c33f.jpg" alt="Big House Logo" class="mb-3" height="48">
+                    <p class="text-white">Providing comprehensive professional solutions since 2024.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h5 mb-3">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                     <h3 class="h5 mb-3">Services</h3> 
+                     <ul class="list-unstyled"> 
+                        <li class="mb-2"><a href="Architectural.html">Architectural Services</a></li>
+                        <li class="mb-2"><a href="Creative.html">Creative Services</a></li>
+                        <li class="mb-2"><a href="Printing.html">Printing Services</a></li>
+                        <li><a href="Art.html">Art & Collectibles</a></li>
+                        <li><a href="proparty.html">Vehicle Management Services</a></li>
+                        <li><a href="construction.html">Construction & Technical Services</a></li>
+                        <li><a href="itsolution.html">IT Solutions</a></li> 
+                    </ul> 
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h5 mb-3">Contact</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">info@bighouse.com</li>
+                        <li class="mb-2">037-2230844</li>
+                        <li class="mb-2">No. 13/12, Jayapathirana Mawatha,<br>
+                        Bauddhaloka Road,<br>Kurunagala.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4 border-top border-light">
+                <p class="mb-0">&copy; 2024 Big House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.service-card, .why-choose-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

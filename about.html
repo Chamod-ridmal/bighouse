@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="common.css" rel="stylesheet">
+    <link href="navi.css" rel="stylesheet">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        :root {
+            --primary: #2C3E50;
+            --secondary: #34495E;
+            --accent: #FF7F50;
+            --text: #333;
+            --light: #ECF0F1;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+        }
+
+        .section {
+            padding: 40px 0;
+            background: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+             url('https://images.unsplash.com/photo-1562564055-71e051d33c19') center/cover;
+             margin-top: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin: 60px 0;
+        }
+
+        .flex-content {
+            flex: 1;
+        }
+
+        .flex-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .flex-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+
+        .flex-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .mission-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+     <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="img/WhatsApp Image 2024-12-25 at c10.14.00_aba0c33f.jpg" alt="Big House Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="index.html">Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>About Us</h1>
+                <p>Big House's solutions and services are like our vision - crafted with precision, delivered with excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="flex-container">
+                <div class="flex-content">
+                    <h2 class="section-title">about us</h2>
+                    <p>Big House is a multidisciplinary hub of creativity, innovation, and
+                        technical excellence. We specialize in delivering comprehensive
+                        solutions across architecture, construction, IT, design, advertising,
+                        and property management. With a dedication to precision and quality,
+                        we aim to meet diverse client needs while upholding the highest
+                        standards of professionalism.<br>
+                        From crafting awe-inspiring architectural designs to offering
+                        innovative IT solutions, Big House is your trusted partner in
+                        transforming ideas into reality.</p>
+                </div>
+                <div class="flex-image">
+                    <img src="img/male-painter-studio-using-watercolor-his-art.jpg" alt="Our Work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--light)">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <p>We believe not just in growing bigger, but in growing better. Excellence means aligning our success with our clients' success.</p>
+            
+            <div class="mission-cards">
+                <div class="card">
+                    <h3>Client Satisfaction</h3>
+                    <p>Deliver tailored services that exceed expectations and create long-lasting partnerships.</p>
+                </div>
+                <div class="card">
+                    <h3>Innovation</h3>
+                    <p>Leverage cutting-edge technology and methodologies to deliver unparalleled quality and efficiency.</p>
+                </div>
+                <div class="card">
+                    <h3>Sustainability</h3>
+                    <p>Promote eco-friendly practices in every project to create positive environmental impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="flex-container">
+                <div class="flex-image">
+                    <img src="img/modern-professional-businesswoman.jpg" alt="Our Team">
+                </div>
+                <div class="flex-content">
+                    <h2 class="section-title">Our Team</h2>
+                    <p>At Big House, our team is the heart of our success. Comprising skilled
+                        professionals from diverse fields, we bring together a wealth of
+                        experience, passion, and dedication.Architects & Designers: Experts in creating functional, innovative, and
+                        aesthetically pleasing designs.<br>
+                        Engineers & Technicians: Specialists in construction, technical
+                        advising, and site inspections, ensuring projects are built to last.
+                        Creative Minds: Talented designers and strategists bringing life to
+                        campaigns, media, and branding projects.<br>
+                        IT Experts: Technologically adept professionals delivering robust,
+                        secure, and scalable IT solutions.<br>
+                        Customer-Centric Specialists: A team focused on understanding your
+                        unique needs and providing personalized solutions.<br>
+                        Together, we strive to make Big House a name synonymous with trust,
+                        innovation, and excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!--social side fix bar-->
+      <div class="social-sidebar">
+        <div class="social-side-fix">
+            <a href="#" class="side-fix-facebook">Facebook</a>
+            <a href="#" class="side-fix-youtube">YouTube</a>
+            <a href="#" class="side-fix-tiktok">TikTok</a>
+            <div class="rotate-text">Follow us.</div>
+        </div>
+    </div>
+
+    <!--whatsapp  slide bottom  -->
+    <div class="whatsapp-slide">
+        <a href="#"><img src="img/icon/whatsappl.png" width="50px" height="50px" ></a>
+    </div> 
+      <!-- Footer -->
+      <footer style="background-color: #17252A" class="text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <img src="img/WhatsApp Image 2024-12-25 at c10.14.00_aba0c33f.jpg" alt="Big House Logo" class="mb-3" height="48">
+                    <p class="text-white">Providing comprehensive professional solutions since 2024.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h5 mb-3">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                     <h3 class="h5 mb-3">Services</h3> 
+                     <ul class="list-unstyled"> 
+                        <li class="mb-2"><a href="Architectural.html">Architectural Services</a></li>
+                        <li class="mb-2"><a href="Creative.html">Creative Services</a></li>
+                        <li class="mb-2"><a href="Printing.html">Printing Services</a></li>
+                        <li><a href="Art.html">Art & Collectibles</a></li>
+                        <li><a href="proparty.html">Vehicle Management Services</a></li>
+                        <li><a href="construction.html">Construction & Technical Services</a></li>
+                        <li><a href="itsolution.html">IT Solutions</a></li> 
+                    </ul> 
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h5 mb-3">Contact</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">info@bighouse.com</li>
+                        <li class="mb-2">037-2230844</li>
+                        <li class="mb-2">No. 13/12, Jayapathirana Mawatha,<br>
+                        Bauddhaloka Road,<br>Kurunagala.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4 border-top border-light">
+                <p class="mb-0">&copy; 2024 Big House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.service-card, .why-choose-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+
+    <!-- <script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.flex-container, .card').forEach(el => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script> -->
+</body>
+</html>

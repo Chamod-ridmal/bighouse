@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+
+:root {
+    --dark-brown: #17252A;
+    --medium-brown:#2B7A78;
+    --warm-brown: #3AAFA9;
+    --light-brown: #3AAFA9;
+    --mauve-brown:#DEF2F1;
+    --text-light: #fEffff;
+}
+
+/* Navigation */
+.navbar {
+    transition: all 0.3s ease;
+    background-color:#17252A;
+}
+.nav-item{
+    font-size: 22px;
+    white-space: 10px;
+}
+

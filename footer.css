@@ -1,0 +1,64 @@
+footer {
+    background-color: #17252A;
+    font-family: Arial, sans-serif;
+}
+
+footer img {
+    max-width: 100%;
+    height: 60px;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+/* Link Styles */
+footer .list-unstyled a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+/* Hover Effect for Links */
+footer .list-unstyled a:hover {
+    color: #3AAFA9;
+    transform: translateX(5px);
+}
+
+/* Services Links Specific Styling */
+footer .col-md-3:nth-child(3) a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .col-md-3:nth-child(3) a:hover {
+    color: #3AAFA9;
+}
+
+/* Contact Information Styling */
+footer .col-md-3:last-child li {
+    line-height: 1.6;
+}
+
+/* Copyright Section */
+footer .border-top {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    footer .col-md-3 {
+        margin-bottom: 2rem;
+    }
+    
+    footer .row {
+        text-align: center;
+    }
+    
+    footer img {
+        margin: 0 auto;
+        display: block;
+    }
+}

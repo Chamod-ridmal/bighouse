@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big House</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="img/WhatsApp Image 2024-12-25 at c10.14.00_aba0c33f.jpg" alt="Big House Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <button id="translateButton" class="nav-link btn btn-link" onclick="toggleTranslate()">
+                            සිංහල
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="google_translate_element" style="display: none;"></div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background active"></div>
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                     <span style="font-size: 1.5em;">B</span>ig 
+                     <span style="font-size: 1.5em;">H</span>ouse 
+                </h1>
+                <h2 class="hero-subtitle">One House - More Work</h2>
+                <p class="hero-text">
+                    At Big House, our mission is to deliver exceptional services across multiple domains with innovation, precision, and unwavering commitment to quality. We strive to be the cornerstone of creative and technical excellence, empowering our clients to achieve their goals efficiently and effectively.
+                </p>
+                <a href="#services" class="btn btn-explore">
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+     <!-- number -->
+     <!-- Statistics Section -->
+<div class="numbre-box">
+    <div class="stats-container">
+        <div class="stat-item">
+            <div class="icon server-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="8" rx="2" />
+                    <rect x="2" y="14" width="20" height="8" rx="2" />
+                    <line x1="6" y1="6" x2="10" y2="6" />
+                    <line x1="6" y1="18" x2="10" y2="18" />
+                </svg>
+            </div>
+            <div class="stat-info">
+                <div class="number">1500</div>
+                <div class="label">Weekend custermer</div>
+            </div>
+        </div>
+
+        <div class="stat-item">
+            <div class="icon users-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="7" r="4"/>
+                    <circle cx="15" cy="7" r="4"/>
+                    <path d="M5 21v-2a7 7 0 0114 0v2"/>
+                </svg>
+            </div>
+            <div class="stat-info">
+                <div class="number">40</div>
+                <div class="label">coustermer daily</div>
+            </div>
+        </div>
+
+        <div class="stat-item">
+            <div class="icon files-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                    <path d="M14 2v6h6"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+            </div>
+            <div class="stat-info">
+                <div class="number">15,000</div>
+                <div class="label">Files installed daily</div>
+            </div>
+        </div>
+
+        <div class="stat-item">
+            <div class="icon template-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2"/>
+                    <rect x="7" y="7" width="10" height="10"/>
+                </svg>
+            </div>
+            <div class="stat-info">
+                <div class="number">100s</div>
+                <div class="label">Customizable themes</div>
+            </div>
+        </div>
+    </div>
+</div>      
+     <!--social side fix bar-->
+     <div class="social-sidebar">
+        <div class="social-side-fix">
+            <a href="#" class="side-fix-facebook">Facebook</a>
+            <a href="#" class="side-fix-youtube">YouTube</a>
+            <a href="#" class="side-fix-tiktok">TikTok</a>
+            <div class="rotate-text">Follow us.</div>
+        </div>
+    </div>
+
+    <!--whatsapp  slide bottom  -->
+    <div class="whatsapp-slide">
+        <a href="#"><img src="img/icon/whatsappl.png" width="50px" height="50px" ></a>
+    </div> 
+    <!-- Services Section -->
+    <section id="services" class="section-padding bg-brown">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h2 class="display-4 fw-bold">Our Services</h2>
+                    <p class="lead">Discover what we can do for you</p>
+                </div>
+            </div>
+            <div class="services-grid">
+                <!-- First Row Cards -->
+                <div class="service-card">
+                    <img src="img/ser1.png" alt="Architectural Services" class="service-image">
+                    <div class="service-overlay">
+                        <h3 class="service-name">Architectural and Design Hub</h3>
+                        <p class="service-description">Provide comprehensive solutions tailored to meet your project needs with precision, innovation, and quality.</p>
+                        <a href="Architectural.html" class="service-button">
+                            Explore <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card">
+                    <img src="img/ser2.png" alt="Creative Services" class="service-image">
+                    <div class="service-overlay">
+                        <h3 class="service-name">Creative and Advertising Services</h3>
+                        <p class="service-description">Creative and Advertising Services designed to elevate your brand and captivate your audience.</p>
+                        <a href="Creative.html" class="service-button">
+                            Explore <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card">
+                    <img src="img/ser3.png" alt="Printing Services" class="service-image">
+                    <div class="service-overlay">
+                        <h3 class="service-name">Printing Services</h3>
+                        <p class="service-description">We deliver high-quality printing solutions to meet all your personal and business needs.</p>
+                        <a href="Printing.html" class="service-button">
+                            Explore <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card">
+                    <img src="img/ser4.png" alt="Art Services" class="service-image">
+                    <div class="service-overlay">
+                        <h3 class="service-name">Art and Collectibles</h3>
+                        <p class="service-description">We celebrate creativity and craftsmanship with a diverse range of art and collectibles.</p>
+                        <a href="Art.html" class="service-button">
+                            Explore <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Second Row Cards -->
+                <div class="service-card">
+                    <img src="img/ser5.png" alt="Design Services" class="service-image">
+                    <div class="service-overlay">
+                        <h3 class="service-name">Property & Vehicle Management Services</h3>
+                        <p class="service-description">services to address all your property and vehicle needs.</p>
+                        <a href="proparty.html" class="service-button">
+                            Explore <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card">
+                    <img src="img/ser6.png" alt="Digital Services" class="service-image">
+                    <div class="service-overlay">
+                        <h3 class="service-name">Construction & Technical Services</h3>
+                        <p class="service-description">combining innovation, quality, and expertise to meet all your building and infrastructure needs.</p>
+                        <a href="construction.html" class="service-button">
+                            Explore <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="service-card">
+                    <img src="img/ser7.png" alt="Consulting Services" class="service-image">
+                    <div class="service-overlay">
+                        <h3 class="service-name">IT Solutions</h3>
+                        <p class="service-description">cutting-edge IT services designed to support your personal and business needs.</p>
+                        <a href="itsolution.html" class="service-button">
+                            Explore <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container py-5">
+            <h2 class="display-5 text-center fw-bold mb-5" style="color: var(--dark-brown);">Our Portfolio</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="hover-scale">
+                        <img src="img/modern-professional-businesswoman.jpg" alt="Architecture" class="img-fluid rounded shadow-lg mb-3">
+                        <h3 class="h4">Architectural Excellence</h3>
+                        <p class="text-muted">Professional architectural and technical solutions</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="hover-scale">
+                        <img src="img/male-painter-studio-using-watercolor-his-art.jpg" alt="Creative" class="img-fluid rounded shadow-lg mb-3">
+                        <h3 class="h4">Creative Design</h3>
+                        <p class="text-muted">Innovative advertising and branding solutions</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="hover-scale">
+                        <img src="img/5647786.jpg" alt="Art" class="img-fluid rounded shadow-lg mb-3">
+                        <h3 class="h4">Artistic Collection</h3>
+                        <p class="text-muted">Unique art pieces and collectibles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-brown">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="display-4 fw-bold mb-5">Contact Us</h2>
+                    <form class="contact-form">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-brown btn-lg w-100">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #17252A" class="text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <img src="img/WhatsApp Image 2024-12-25 at c10.14.00_aba0c33f.jpg" alt="Big House Logo" class="mb-3" height="48">
+                    <p class="text-white">Providing comprehensive professional solutions since 2024.</p>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h5 mb-3">Quick Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                     <h3 class="h5 mb-3">Services</h3> 
+                     <ul class="list-unstyled"> 
+                        <li class="mb-2"><a href="Architectural.html">Architectural Services</a></li>
+                        <li class="mb-2"><a href="Creative.html">Creative Services</a></li>
+                        <li class="mb-2"><a href="Printing.html">Printing Services</a></li>
+                        <li><a href="Art.html">Art & Collectibles</a></li>
+                        <li><a href="proparty.html">Vehicle Management Services</a></li>
+                        <li><a href="construction.html">Construction & Technical Services</a></li>
+                        <li><a href="itsolution.html">IT Solutions</a></li> 
+                    </ul> 
+                </div>
+                <div class="col-md-3">
+                    <h3 class="h5 mb-3">Contact</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="chamodridmal@gmail.com">chamodgmail.com</a></li>
+                        <li class="mb-2">037-2230844</li>
+                        <li class="mb-2">No. 13/12, Jayapathirana Mawatha,<br>
+                        Bauddhaloka Road,<br>Kurunagala.</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4 border-top border-light">
+                <p class="mb-0">&copy; 2024 Big House. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Hidden translate element -->
+    <div id="google_translate_element" style="display: none;"></div>
+    
+  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Navbar Scroll Effect -->
+    <script>
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('navbar-scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('navbar-scrolled');
+            }
+        });
+        const images = [
+            'https://images.unsplash.com/photo-1600585154340-be6161a56a0c',
+            'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9',
+            'https://images.unsplash.com/photo-1600585152915-d208bec867a1'
+        ];
+
+        const backgrounds = document.querySelectorAll('.hero-background');
+        let currentIndex = 0;
+        let nextIndex = 1;
+
+        // Set initial background
+        backgrounds[0].style.backgroundImage = `url(${images[0]})`;
+        backgrounds[1].style.backgroundImage = `url(${images[1]})`;
+
+        function swapBackgrounds() {
+            backgrounds[currentIndex].classList.remove('active');
+            backgrounds[nextIndex].classList.add('active');
+
+            // Update indices
+            currentIndex = nextIndex;
+            nextIndex = (nextIndex + 1) % 2;
+
+            // Preload next image
+            const nextImageIndex = (images.indexOf(backgrounds[currentIndex].style.backgroundImage.slice(5, -2)) + 1) % images.length;
+            backgrounds[nextIndex].style.backgroundImage = `url(${images[nextImageIndex]})`;
+        }
+
+        // Change background every 5 seconds
+        setInterval(swapBackgrounds, 5000);
+        </script>
+        
+        
+    
+    
+    
+</body>
+</html>

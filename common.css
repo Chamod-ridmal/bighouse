@@ -1,0 +1,71 @@
+/* follow us slide bar */
+.social-sidebar {
+    position: fixed;
+    left: 1% ;
+    top: 45% ;
+    transform: translateY(-50%);
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.social-side-fix {
+    display: flex;
+    flex-direction: column;
+    
+}
+.rotate-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    margin-top: 10px;
+    font-weight: bold;
+    color:black;
+}
+.side-fix-facebook, .side-fix-youtube, .side-fix-tiktok{
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    /*text-align: center;*/
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: transparent;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+}
+.side-fix-facebook{
+    background-image: url(img/icon/fb\ .png);
+}
+.side-fix-facebook:hover {
+    background-image: none; 
+    color: blue; 
+    transform: translateX(5px);
+}
+
+.side-fix-youtube{
+    background-image: url(img/icon/yt\ .png);
+}
+.side-fix-youtube:hover {
+    background-image: none; 
+    color: red; 
+    transform: translateX(5px);       
+}
+.side-fix-tiktok{
+    background-image: url(img/icon/tt\ .png);
+}
+.side-fix-tiktok:hover {
+    background-image: none; 
+    color: black; 
+    transform: translateX(5px);       
+
+}
+.social-sidebar a{
+    text-decoration: none;
+}
+
+/*whatsapp bottom slide icon*/
+.whatsapp-slide{
+    position: fixed;
+    bottom: 30px;
+    right: 1%;
+    z-index: 100;
+}
